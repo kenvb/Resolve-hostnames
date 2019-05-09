@@ -1,6 +1,5 @@
 [System.Array[]]$IP= @()
 $Targets = get-content ip.txt
-#$Targets = "p164742.vlaanderen.be"
 Add-Content resolution.csv  -Value 'Hostname;IP'
 ForEach($Name in $Targets)
 	{
